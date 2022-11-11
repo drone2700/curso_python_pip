@@ -10,9 +10,8 @@ def run():
 #   countries = list(map(lambda x: x['Country'], data))
 #   percentages = list(map(lambda x: x['World Population Percentage'], data))
 # ```
-
-  df = pd.read_csv('data.csv')
-  df = df[df['Continent'] == 'South America']
+  df =pd.read_csv('data.csv')
+  df = df[df["Continent"] == 'Africa']
 
   countries = df['Country'].values
   percentages = df['World Population Percentage'].values
